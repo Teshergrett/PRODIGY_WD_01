@@ -1,0 +1,85 @@
+/* projects.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 80px; /* To prevent content from hiding behind the fixed menu bar */
+}
+
+header {
+    background-color: #5e35b1; /* Purple color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav#top-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+nav#top-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav#top-menu ul li {
+    margin: 0;
+}
+
+nav#top-menu ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #5e35b1; /* Purple color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav#top-menu ul li a:hover, nav#top-menu ul li a.active {
+    background-color: #5e35b1;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+section#projects {
+    padding: 20px;
+}
+
+.project-item {
+    display: none;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.project-item.active {
+    display: block;
+}
+
+.project-item#project1.active {
+    background-color: white;
+    color: #5e35b1; /* Purple text */
+}
+
+.project-item#project2.active {
+    background-color: red;
+    color: white; /* White text */
+}
+
+footer {
+    background-color: #5e35b1; /* Purple color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
